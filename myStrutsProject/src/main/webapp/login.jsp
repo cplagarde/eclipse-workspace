@@ -3,26 +3,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>Login</title>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>Login</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 </head>
-<style>
-body {
-}
-.alert-danger li, .alert-success li {
-	list-style: none;
-}
-.ui-dialog-titlebar-close {
-    visibility: hidden;
-}
-.ui-dialog-title {
-    text-align: left;
-}
-.navbar {
-	margin-bottom: 0;
-	border-radius: 0;
-}
-</style>
+
 <body>
 
 	<s:form action="login" method="post">

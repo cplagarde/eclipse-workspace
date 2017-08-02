@@ -17,8 +17,8 @@
 		</global-results>
 
 		<action name="login" class="com.ibm.actions.WelcomeUserAction" method="loginuser">
-			<result name="success">/empList.jsp</result>
-			<result name="error">/login.jsp</result>
+			<result name="SUCCESS">/empList.jsp</result>
+			<result name="ERROR">/login.jsp</result>
 		</action>
 		
 		<action name="update" class="com.ibm.actions.WelcomeUserAction" 

@@ -16,9 +16,9 @@
 			<result name="employeeList">empList.jsp</result>
 		</global-results>
 
-		<action name="login" class="com.ibm.actions.WelcomUserAction" method="loginuser">
-			<result name="success">empList.jsp</result>
-			<result name="error">login.jsp</result>
+		<action name="login" class="com.ibm.actions.LoginAction" method="loginuser">
+			<result name="success">/empList.jsp</result>
+			<result name="error">/login.jsp</result>
 		</action>
 		
 		<action name="update" class="com.ibm.actions.WelcomeUserAction" 

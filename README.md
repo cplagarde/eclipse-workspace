@@ -1,2 +1,2 @@
-# eclipse-workspace
+# eclipseWorkspace
 Eclipse Projects

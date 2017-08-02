@@ -25,8 +25,6 @@ body {
 </style>
 <body>
 
-
-	<!-- test comment -->
 	<s:form action="login" method="post">
 		<div align="center">
 			<s:if test="hasActionErrors()">

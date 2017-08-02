@@ -24,7 +24,7 @@ body {
 }
 </style>
 <body>
-	
+
 	<s:form action="login" method="post">
 		<div align="center">
 			<s:if test="hasActionErrors()">

@@ -1,3 +1,4 @@
+Email,Password
 jdoe@mail.com,password
 jsmith@mail.com,password
 don.jackson@mail.com,password

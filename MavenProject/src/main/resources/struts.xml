@@ -7,24 +7,28 @@
 <struts>
 
 	<package name="default" extends="struts-default">
-	
-		<action name="login" class="com.Mbean.WelcomeUserAction" method="loginuser">
+
+		<action name="login" class="com.Mbean.WelcomeUserAction"
+			method="loginuser">
 			<result name="SUCCESS">/welcome_user.jsp</result>
-			<result name= "ERROR">/login.jsp </result>
+			<result name="ERROR">/login.jsp </result>
 		</action>
-		
-		<action name="update" class="com.Mbean.WelcomeUserAction" method="editUser">
-		<result name = "SUCCESS">/EmployeeEditedSave.jsp</result>
+
+		<action name="update" class="com.Mbean.WelcomeUserAction"
+			method="editUser">
+			<result name="SUCCESS">/EmployeeEditedSave.jsp</result>
 		</action>
-		
-		<action name="saveEditEmp" class="com.Mbean.EditSaveAction" method="Savechanges">
-		<result name = "SUCCESS">/welcome_user.jsp</result>
-		<result name = "ERROR">/EmployeeEditedSave.jsp</result> </action>
-		
-		<action name="PrePop" class="com.Mbean.EditSaveAction" method="Populate">
-		<result name = "SUCCESS">/EmployeeEditedSave.jsp</result>
+
+		<action name="saveEditEmp" class="com.Mbean.SaveCancelEditAction"
+			method="Savechanges">
+			<result name="SUCCESS">/welcome_user.jsp</result>
+			<result name="ERROR">/EmployeeEditedSave.jsp</result>
 		</action>
-		
+
+		<action name="PrePop" class="com.Mbean.SaveCancelEditAction" method="Populate">
+			<result name="SUCCESS">/EmployeeEditedSave.jsp</result>
+		</action>
+
 
 
 	</package>

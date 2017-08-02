@@ -48,7 +48,7 @@ public class WelcomeUserAction extends ActionSupport{
 	/*logic for when login button is clicked*/
 	public String loginuser()  {
 		
-		employeeAccount = LoginBO.fetchEmployeesLoginAccount();
+		employeeAccount = LoginBO.fetchEmployeesLoginAction();
 		employees = EmployeeBO.fetchEmployees();
 		
 		

@@ -18,7 +18,7 @@ public class LoginBO extends ActionSupport {
 	String password;
 	private static final long serialVersionUID = 1L;
 	
-	public static List<LoginAction> fetchEmployeesLoginAccount() { 
+	public static List<LoginAction> fetchEmployeesLoginAction() { 
 //		Voodoo magic to get relative path
 		URL url = new EmployeeBO().getClass().getClassLoader().getResource("/login_account.csv");
 	    URI uri = null;
@@ -35,7 +35,7 @@ public class LoginBO extends ActionSupport {
 	    String line = ""; 
 	    String cvsSplitBy = ","; 
 	    List<LoginAction> emparraylogin = new ArrayList<LoginAction>(); 
-	    LoginAction employeeLoginAccount; 
+	    LoginAction employeeLoginAction; 
 	    
 	    
 	    try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) { 
@@ -43,10 +43,10 @@ public class LoginBO extends ActionSupport {
 	            // use comma as separator 
 	            String[] emp = line.split(cvsSplitBy); 
 	            
-	            employeeLoginAccount = new LoginAction(emp[0], emp[1]); 
-	            emparraylogin.add(employeeLoginAccount); 	         
+	            employeeLoginAction = new LoginAction(emp[0], emp[1]); 
+	            emparraylogin.add(employeeLoginAction); 	         
 	    
-	            System.out.println("Employee name is " + employeeLoginAccount.getUsername() + " " + employeeLoginAccount.getPassword());
+	            System.out.println("Employee name is " + employeeLoginAction.getUsername() + " " + employeeLoginAction.getPassword());
 	        } 
 	        
 	       // System.out.println("Employee Account Information (size)--> " + emparraylogin.size()); 

@@ -4,19 +4,26 @@
     "http://struts.apache.org/dtds/struts-2.0.dtd">
 
 <struts>
-	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
-	<constant name="struts.devMode" value="false" />
-	<constant name="struts.custom.i18n.resources" value="ApplicationResources" />
+<!-- 	<constant name="struts.enable.DynamicMethodInvocation" value="false" /> -->
+<!-- 	<constant name="struts.devMode" value="false" /> -->
+<!-- 	<constant name="struts.custom.i18n.resources" value="ApplicationResources" /> -->
 
 
-	<package name="default" extends="struts-default" namespace="/">
+	<package name="com.ibm.actions" extends="struts-default">
 
-		<global-results>
-			<result name="loginPage">login.jsp</result>
-			<result name="employeeList">empList.jsp</result>
-		</global-results>
 
-		<action name="login" class="com.ibm.actions.WelcomeUserAction" method="loginuser">
+<!-- 		<global-results> -->
+<!-- 			<result name="loginPage">login.jsp</result> -->
+<!-- 			<result name="employeeList">empList.jsp</result> -->
+<!-- 		</global-results> -->
+
+<!-- 		<action name="login" class="com.ibm.actions.LoginAction" method="loginEmployee"> -->
+<!-- 			<result name="success">empList.jsp</result> -->
+<!--   			<result name="error">login.jsp</result>		  	 -->
+<!--   		</action> -->
+
+
+		<action name="login" class="com.ibm.actions.WelcomeUserAction" method="loginUser">
 			<result name="SUCCESS">/empList.jsp</result>
 			<result name="ERROR">/login.jsp</result>
 		</action>
@@ -28,7 +35,7 @@
 		
 		<action name="saveEditEmp" class="com.ibm.actions.EditAction"
 			method="Savechanges">
-			<result name="SUCCESS">/welcome_user.jsp</result>
+			<result name="SUCCESS">/empList.jsp</result>
 			<result name="ERROR">/empEditSave.jsp</result>
 		</action>
 		

@@ -9,7 +9,7 @@
 
 <body>
 
-
+<!-- testing -->
 	<s:form action="login">
 		<s:textfield name="username" label="Username" />
 		<s:password name="password" label="Password" />
